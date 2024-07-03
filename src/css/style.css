@@ -14,23 +14,22 @@ body {
 
 header {
     left: 0;
-    padding-left: 5%;
     display: flex;
-    flex-direction: row;
-    background-color: #121212;
-    width: 100%;
-    height: 150px;
+    flex-direction: column;
     align-items: center;
     white-space: nowrap;
 }
 
 h1 {
-    padding: 2% 40% 2% 2%;
+    padding: 2% 24% 2% 2%;
     font-size: 35px;
     color: white;
 }
 
 #SupHeader {
+    background-color: #121212;
+    width: 100%;
+    height: 150px;
     display: flex;
     align-items: center;
 }
@@ -38,13 +37,39 @@ h1 {
 #SupHeader img {
     width: 120px;
     height: 120px;
+    padding-left: 5%;
 }
 
 .BtnGo {
     background-color: #ffc200;
     padding: 2%;
-    border-radius: 5px;
+    border-radius: 10px;
     color: black;
+    transition: 0.5s;
+}
+
+.BtnGo:hover {
+    transform: scale(1.1);
+    background-color: #ffd343;
+    color: white;
+}
+
+#InfHeader {
+    background-color: #ffc200;
+    width: 100%;
+    height: 25px;
+}
+
+nav {
+    margin: 0 5%;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    padding: 0.7% 3%;
 }
 
 main {
