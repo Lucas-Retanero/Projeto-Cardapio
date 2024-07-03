@@ -40,7 +40,7 @@ html {
 
 .cabecalho a {
     background-color: #ffc200;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #121212;
     font-weight: 500;
     font-size: 30px;
@@ -68,3 +68,60 @@ nav ul a {
     letter-spacing: 2px;
 }
 
+#QS {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+}
+
+#TxtQS {
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    gap: 1.5rem;
+}
+
+#TxtQS h3 {
+    width: 300px;
+    font-family: "Roboto";
+    color: white;
+}
+
+#TxtQS h2 {
+    font-family: "Staatliches", sans-serif;
+    color: #ffc200;
+    font-size: 40px;
+}
+
+#TxtQS a {
+    background-color: #ffc200;
+    border-radius: 10px;
+    color: #121212;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Staatliches", sans-serif;
+    height: 3rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#BanQS {
+    background-image: url("../img/BanQS.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 50%;
+}
+
+#BanSH {
+    width: 100%;
+    height: 100%;
+    background-color: #5b5b5bd0;
+}
