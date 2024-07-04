@@ -4,7 +4,7 @@ html {
 }
 
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     border: 0;
     color: #121212;
@@ -12,19 +12,37 @@ html {
     list-style: none;
 }
 
+::-webkit-scrollbar {
+    background-color: #121212;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffc200;
+    border-radius: 10px;
+}
+
 #Cabecalho {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     background-color: #121212;
     width: 100%;
-    height: 7rem;
+    height: 6rem;
     align-items: center;
     white-space: nowrap;
     padding: 1rem;
     font-family: "Staatliches", sans-serif;
     letter-spacing: 5px;
+}
+
+#titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    padding-left: 7rem;
 }
 
 #Cabecalho h1 {
@@ -34,44 +52,39 @@ html {
 }
 
 #Cabecalho img {
-    width: 9rem;
-    height: 8rem;
+    width: 7.5rem;
+    height: 6.5rem;
 }
 
-#Cabecalho #BtnGo {
+#BtnGo {
     background-color: #ffc200;
+    border: solid 4px #ffc200;
     border-radius: 10px;
     color: #121212;
-    font-weight: 500;
-    font-size: 30px;
-    height: 5rem;
-    width: 15rem;
+    font-weight: 550;
+    font-size: 25px;
+    height: 4rem;
+    width: 13rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    margin-right: 25rem;
 }
 
-#Cabecalho a:hover {
-    color: #f9f7f4;
-    transform: scale(1.1);
-}
-
-#Cabecalho #LogoA img {
+#BtnGo:hover {
     transition: 0.5s;
-}
-
-#Cabecalho #LogoA img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 nav ul {
     background-color: #ffc200;
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    padding: 1rem;
-    padding-left: 4rem;
+    gap: 5rem;
+    align-items: center;
+    padding-left: 5rem;
+    height: 3.3rem;
 }
 
 nav li {
@@ -79,45 +92,44 @@ nav li {
     font-weight: 450;
     font-family: "Staatliches", sans-serif;
     letter-spacing: 2px;
-    transition: 0.5s;
+    transition: 0.3s;
+    border-bottom: #ffc200 solid 3px;
 }
 
 nav li:hover {
-    transform: scale(1.2);
-}
-
-nav li a:hover {
-    color: #f9f7f4;
+    transform: scale(1.05);
+    border-bottom: #121212 solid 3px;
 }
 
 #QS {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 400px;
+    min-height: calc(100vh - 11rem);
 }
 
 #TxtQS {
     background-color: #292929;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 50%;
-    gap: 1.5rem;
 }
 
-#TxtQS h3 {
-    width: 300px;
+#TxtQS p {
     font-family: "Roboto";
     color: #f9f7f4;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
 
 #TxtQS h2 {
     font-family: "Staatliches", sans-serif;
     color: #ffc200;
-    font-size: 40px;
+    font-size: 5rem;
+    letter-spacing: 5px;
 }
 
 #TxtQS a {
@@ -125,18 +137,21 @@ nav li a:hover {
     border-radius: 10px;
     color: #121212;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 28px;
     font-family: "Staatliches", sans-serif;
-    height: 3rem;
-    width: 10rem;
+    height: 4.5rem;
+    width: 13rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    margin-top: 4rem;
+    border: #ffc200 solid 3px;
 }
 
 #TxtQS a:hover {
     color: #f9f7f4;
+    background-color: #292929;
     transform: scale(1.2);
 }
 
@@ -144,14 +159,21 @@ nav li a:hover {
     background-image: url("../img/BanQS.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     width: 50%;
 }
 
 #BanSH {
-    background-color: #5b5b5bd0;
+    background-color: #5b5b5b;
     width: 100%;
     height: 100%;
+    opacity: 70%;
+}
+
+.quem-somos {
+    width: 100%;
+    height: 53rem;
+    background-color: #f9f7f4;
 }
 
 footer {
@@ -223,4 +245,28 @@ hr {
     font-size: 25px;
     font-weight: 500;
     letter-spacing: 5px
+}
+
+.topo {
+    background-color: #ffc200;
+    position: fixed;
+    bottom: 20px;
+    right: -500px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: 0.4s all;
+}
+
+.topo img {
+    width: 45px;
+}
+
+.mostrar-botao .topo {
+    right: 20px;
+    transition: 0.4s all;
 }
