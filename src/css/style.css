@@ -10,6 +10,7 @@ html {
     color: #121212;
     text-decoration: none;
     list-style: none;
+    transition: 0.5s;
 }
 
 ::-webkit-scrollbar {
@@ -56,6 +57,10 @@ html {
     height: 6.5rem;
 }
 
+#Cabecalho img:hover {
+    transform: scale(1.15);
+}
+
 #BtnGo {
     background-color: #ffc200;
     border: solid 4px #ffc200;
@@ -68,7 +73,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
     margin-right: 25rem;
 }
 
@@ -144,7 +148,6 @@ nav li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
     margin-top: 4rem;
     border: #ffc200 solid 3px;
 }
@@ -170,7 +173,7 @@ nav li:hover {
     opacity: 70%;
 }
 
-.quem-somos {
+#Cardapio {
     width: 100%;
     height: 53rem;
     background-color: #f9f7f4;
@@ -179,67 +182,75 @@ nav li:hover {
 footer {
     background-color: #121212;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
 }
 
-.Rodape {
-    top: 0;
-    flex-direction: column;
+#GuiaRDP {
+    display: flex;
+    flex-direction: row;
     padding: 5% 0;
 }
 
-.Rodape img {
-    width: 150px;
-    height: 150px;
-    transition: 0.5s;
+.RDP {
+    width: 21rem;
 }
 
-.Rodape img:hover {
+.RDP img {
+    width: 14rem;
+    height: 13rem;
+}
+
+.RDP img:hover {
     transform: scale(1.2);
 }
 
-.Rodape li {
-    width: 350px;
-    padding: 3%;
-    transition: 0.5s;
+.RDP li {
+    padding: 3% 0;
 }
 
-.Rodape li:hover {
+.RDP li:hover {
     transform: scale(1.1);
 }
 
-.Rodape li a {
+.RDP li a {
     color: #ffc200;
     font-family: "Staatliches", sans-serif;
     font-size: 25px;
 }
 
-.Rodape li a:hover {
-    color: #e6b61c;
-}
-
-.Rodape h3 {
+.RDP h3 {
     color: #f9f7f4;
     font-family: "Staatliches", sans-serif;
     font-size: 30px;
+    letter-spacing: 2px;
 }
 
-.Rodape i {
-    padding: 0 5% 0 0;
+.RDP i {
+    padding: 2% 3%;
     color: #ffc200;
 }
 
-hr {
-    border: 1px solid white;
-    border-radius: 5px;
-    height: 50%;
+#Redes i {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+#Redes i:hover {
+    transform: scale(1.2);
+}
+
+#TitFO {
+    border-top: 1px solid #f9f7f4;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 #TitFO h3 {
-    padding: 5% 0;
+    padding: 2% 0;
     color: #f9f7f4;
     font-family: "Staatliches", sans-serif;
     font-size: 25px;
@@ -270,3 +281,40 @@ hr {
     right: 20px;
     transition: 0.4s all;
 }
+
+/*#Topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc200;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.4s all;
+}
+
+#Topo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 4px solid #121212;
+    border-radius: 100%;
+    transform: rotate(270deg);
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: "Manrope";
+    z-index: 1;
+    transition: 0.4s all;
+}
+
+#Topo a:hover {
+    background-color: #121212;
+    border: 4px solid #ffc200;
+    color: #ffc200;
+}*/
