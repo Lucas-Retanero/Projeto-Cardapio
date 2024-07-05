@@ -17,13 +17,15 @@
 <body>
     <header>
         <div id="Cabecalho">
-            <a id="LogoA" href="./index.html"><img src="src/img/IconBurguer.png"></a>
-            <h1>HAMBURGUERIA J&L</h1>
+            <div id="titulo">
+                <a id="LogoA" href="./index.html"><img src="src/img/IconBurguer.png"></a>
+                <h1>HAMBURGUERIA J&L</h1>
+            </div>
             <a id="BtnGo" href="#">PEÇA AGORA!</a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">QUEM SOMOS</a></li>
+                <li><a href="#quem-somos">QUEM SOMOS</a></li>
                 <li><a href="#">CARDÁPIO</a></li>
                 <li><a href="#">UNIDADES</a></li>
                 <li><a href="#">PROMOÇÕES</a></li>
@@ -33,18 +35,23 @@
         </nav>
     </header>
     <main>
-        <section id ="QS">
+        <section id="QS">
             <div id="TxtQS">
-                <h3>Venha Conhecer a</h3>
+                <p>Venha conhecer a</p>
                 <h2>HAMBURGUERIA J&L</h2>
-                <h3>e experinete o sabor irresistível dos nossos lanches artesanais!</h3>
+                <p>e experinete o sabor irresistível <br> dos nossos lanches artesanais!</p>
                 <a href="#">VENHA VER!</a>
             </div>
             <div id="BanQS">
                 <div id="BanSH"></div>
             </div>
         </section>
-        <section id ="Crdp">
+
+        <section class="quem-somos" id="quem-somos">
+
+        </section>
+
+        <section id="Cardapio">
         </section>
     </main>
     <footer>
@@ -62,11 +69,21 @@
         </div>
         <div class="Rodape">
             <h3>Entre em Contato</h3>
-            <li><a href="#"><i class="fa-solid fa-location-dot"></i>Endereço: Av. Paulista, 1578 <br> Bela Vista, São Paulo - SP, Brasil</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i>Endereço: Av. Paulista, 1578 <br> Bela Vista, São
+                    Paulo - SP, Brasil</a></li>
             <li><a href="#"><i class="fa-solid fa-envelope"></i>E-mail: contato@hamburgueriajel.com.br</a></li>
             <li><a href="#"><i class="fa-solid fa-phone"></i>Telefone: +55 (11) 92759-2384</a></li>
         </div>
     </footer>
+
+    <div data-anima="scroll">
+        <a href="#">
+            <div class="topo">
+                <img src="./src/img/seta-topo.png" alt="Icone de voltar ao topo">
+            </div>
+        </a>
+    </div>
+
     <hr>
     <footer>
         <div id="TitFO">
