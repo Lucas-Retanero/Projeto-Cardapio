@@ -115,7 +115,7 @@ nav li:hover {
 
 #TxtQS {
     background-color: #292929;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,6 +148,7 @@ nav li:hover {
     justify-content: center;
     margin-top: 4rem;
     border: #ffc200 solid 3px;
+    z-index: 2;
 }
 
 #TxtQS a:hover {
@@ -156,12 +157,25 @@ nav li:hover {
     transform: scale(1.2);
 }
 
+#WavQS {
+    position: absolute;
+    left: 350px;
+    z-index: 1;
+}
+
+#WavQS svg {
+    transform: rotate(90deg);
+    width: 785px;
+    height: 785px;
+}
+
+
 #BanQS {
     background-image: url("../img/BanQS.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 55%;
 }
 
 #BanSH {
@@ -175,6 +189,9 @@ nav li:hover {
     width: 100%;
     height: 53rem;
     background-color: #f9f7f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #Delivery {
@@ -217,12 +234,24 @@ nav li:hover {
     align-items: center;
     justify-content: center;
     border: 3px solid #ffc200;
+    z-index: 1;
 }
 
 #TxtDLVY a:hover {
     background-color: #292929;
     color: #f9f7f4;
     transform: scale(1.2);
+}
+
+#WavDLVY {
+    position: absolute;
+    left: 230px;
+}
+
+#WavDLVY svg {
+    transform: rotate(90deg);
+    width: 959px;
+    height: 959px;
 }
 
 #ImgDLVY {
